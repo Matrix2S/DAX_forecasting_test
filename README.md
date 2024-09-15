@@ -5,3 +5,11 @@ I analysed their model and methods during my bachelor's thesis and saw it as an 
 Their model is not to complex but also gives me enough room to work with different python data analysis(science) libraries.
 
 The task is to build a ARIMA-NeuralNetwork Hybrid model to predict DAX-30 closing values, for which I used daily DAX-30 data from 2000 - 2023. For simplyfication I used an AR(p) model for the ARIMA(p,d,q) model and a for the nueral network I used an Multilayer Perceptron with **one** hiddenlayers of size 40 to reduce computation.
+
+GDAXI.csv - Daily DAX-30 data from 2000-2023 with closing/ opening values, daily volume, etc.
+MA_Filter.py - Pre-processing step to the input data
+ARIMA_forecast.py - Get the ARIMA(p,d,q) forecast for the input data (in this case its a AR(p) model)
+MLP_forecast.py - Get the neural network forecast for the input data (in this case its a multi layer perceptron)
+Model_building.py - Recreate the model proposed in (C. N. Babu & B. E. Reddy, 2015) using the above tools
+
+Libraries used: numpy, pandas, sklearn, statsmodels, matplotlib, math
